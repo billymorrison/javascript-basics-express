@@ -8,8 +8,8 @@ const countCharacters = string => string.length;
 
 const firstCharacter = string => string[0];
 
-const firstCharacters = (string, n) => {
-  let letters = "";
+const firstCharacters = (string, n = 1) => {
+  let letters = '';
   for (let i = 0; i < n; i++) {
     letters += string[i];
   }
@@ -22,5 +22,5 @@ module.exports = {
   lowercase,
   countCharacters,
   firstCharacter,
-  firstCharacters
+  firstCharacters,
 };
